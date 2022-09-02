@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+/* setting */
+
+/*box 1*/
 .backA
 {
 	text-decoration:none;
@@ -24,21 +27,6 @@ body
 {
 	background: #222;
 }
-.title2 {
-	/* border */
-
-  border: solid;
-	border-color: #f0f0f0;
-	border-radius: 10px;
-
-
-	/* button */
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-	transition: 0.5s;
-}
 .t
 {
 	font-size: 13px;
@@ -54,6 +42,7 @@ body
 	background: #fff;
 	box-shadow: 0 30px 30px rgba(0,0,0,0.05);
 	transition: 0.5s;
+	display: grid;
 }
 .darkMode .box
 {
@@ -187,4 +176,185 @@ body
 .menu li label .action input:checked ~ i::before
 {
 	left: calc(100% - 12.5px);
+}
+
+
+
+
+/*box 2*/
+
+
+
+
+
+
+.show .setting
+{
+	display: grid;
+}
+
+.hide .setting
+{
+	display: none;
+}
+.setting
+{
+	align-items: left;
+	gap: 10px;
+	/* position: relative; */
+	position:relative;
+	left:50px;
+	margin-bottom:150px;
+	padding: 20px;
+	right : 30px;
+	width: 350px;
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+	transition: 0.5s;
+	display: none;
+}
+.darkMode .setting
+{
+	background: #292929;
+}
+.profile
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.profile .imgBx
+{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profile .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profile .text
+{
+	font-weight: 500;
+	color: #333;
+	line-height: 1.2em;
+}
+.darkMode .profile .text
+{
+	color: #ddd;
+}
+.profile .text span
+{
+	font-weight: 400;
+	font-size: 0.85em;
+	color: #555;
+}
+.darkMode .profile .text span
+{
+	color: #aaa;
+}
+.settings
+{
+	position: relative;
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px solid rgba(0,0,0,0.05);
+}
+.darkMode .settings
+{
+	border-top: 1px solid rgba(255,255,255,0.05);
+}
+.darkMode .settings .title2
+{
+	border-color: #777;
+}
+.settings li
+{
+	list-style: none;
+	margin: 8px 0;
+}
+.settings li label
+{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.settings li label span
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+	color: #777;
+}
+.darkMode .settings li label span
+{
+	color: #aaa;
+}
+.settings li label span ion-icon
+{
+	margin-right: 10px;
+}
+.settings li label .action
+{
+	position: relative;
+}
+.settings li label .action input
+{
+	appearance: none;
+}
+.settings li label .action i
+{
+	position: relative;
+	width: 30px;
+	height: 15px;
+	border-radius: 15px;
+	background: #ddd;
+	transition: 0.5s;
+}
+.darkMode .settings li label .action i
+{
+	background: #666;
+}
+.settings li label .action input:checked ~ i
+{
+	background: #2aa0ff;
+}
+.settings li label .action i::before
+{
+	content: '';
+	position: absolute;
+	top: 2.5px;
+	left: 2.5px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	transition: 0.5s;
+}
+.settings li label .action input:checked ~ i::before
+{
+	left: calc(100% - 12.5px);
+}
+.darkMode .setting
+{
+	background: #292929;
+}
+.awesome
+{
+
+	position: relative;
+	top : 40px;
+
 }
