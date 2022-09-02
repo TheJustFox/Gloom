@@ -1,0 +1,58 @@
+<!-- Add icon library -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom Select Menu</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="box">
+		<div class="profile">
+
+			<h4 class="text">main<br></h4>
+		</div>
+		<ul class="menu">
+      <li>
+				<label>
+					<span class="title"><ion-icon name="moon"></ion-icon> Dark Mode</span>
+				<span class="action">
+					<input type="checkbox" id="dark">
+					<i></i>
+				</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<a href="setting.html">
+							<span class="seta">setting</span>
+							<i></i>
+					</a>
+				</span>
+				</label>
+			</li>
+      <li>
+        <label>
+          <a href="Gloom v1.4.1.zip">
+              <span>download</span>
+              <i></i>
+          </a>
+        </span>
+        </label>
+      </li>
+		</ul>
+	</div>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+		let body = document.querySelector('body');
+		let dark = document.querySelector('#dark');
+		dark.onclick = function(){
+			if (dark.checked == true){
+				body.classList.add('darkMode');
+			} else {
+				body.classList.remove('darkMode');
+			}
+		}
+	</script>
+</body>
+</html>
